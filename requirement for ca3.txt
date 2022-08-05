@@ -1,0 +1,30 @@
+        4 Classes
+1. Module 
+    - name : String                                     // name of the module
+    - moduleCode : String
+    - description : String
+    - creditUnits : int                                 // credit unit that module carried
+    - assessments : ArrayList<Assessment>               //CA1 CA2 CA3 CA4
+    + getOverallMarks() : double
+    + getOverallTotalMarks() : double
+    + getOverallGrade() : String                        //assign grade (A,B+)
+    + getGradePoint(grade : String) : double            //static method take (A,B+) and return GPA
+    + getWeightedGradePoints() : double                 //gradePoint * creditUnits
+
+2. Assessment
+    - name : String                                     //CA1 CA2 CA3 CA4
+    - description : String
+    - module : Module
+    - marks : double
+    - totalMarks : double
+    - weightage : double
+    + getWeightedMarks() : double
+
+3. Student
+    - name : String
+    - studentID: String
+    - modules : ArrayList<Module>
+    + getTotalCreditUnits() : int
+    + getGPA() : double
+
+4. Ordering System (Main class) / Grade Tracker (driver class)
