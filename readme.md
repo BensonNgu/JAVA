@@ -1,5 +1,2 @@
-## Project description
-System that collect student personal infomation and acedemic records
-
-## Main file
-Gradetracker.java
+## File Description
+- This folder will store my own made projects using Java 
