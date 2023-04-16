@@ -1,8 +1,8 @@
 # EXPLAINATION OF THE EXAMPLE
 ## ANIMAL TYPE (Normal class)
-- [Rabbit](https://github.com/BensonNgu/java/blob/main/Java%20notes/Interface/src/Interface/Rabbit.java)
-- [Fish](https://github.com/BensonNgu/java/blob/main/Java%20notes/Interface/src/Interface/Fish.java)
-- [Hawk](https://github.com/BensonNgu/java/blob/main/Java%20notes/Interface/src/Interface/Hawk.java)
+- :rabbit:[Rabbit](https://github.com/BensonNgu/java/blob/main/Java%20notes/Interface/src/Interface/Rabbit.java)
+- :fish:[Fish](https://github.com/BensonNgu/java/blob/main/Java%20notes/Interface/src/Interface/Fish.java)
+- :bird:[Hawk](https://github.com/BensonNgu/java/blob/main/Java%20notes/Interface/src/Interface/Hawk.java)
 ---
 ## INTERFACE
 - [Prey](https://github.com/BensonNgu/java/blob/main/Java%20notes/Interface/src/Interface/Prey.java)
@@ -10,7 +10,7 @@
 
 
 ---
-## Q/A
+## Q/A :question:
 1. What should we do in our interface ?  
 *Declare only the methods name with no content in the body* ([example from Prey class](https://github.com/BensonNgu/java/blob/main/Java%20notes/Interface/src/Interface/Prey.java))
 
