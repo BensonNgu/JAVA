@@ -95,7 +95,7 @@ public class EnumExample{
 ```
 ---
 ## Arithmetic operation
-|Operator|Meaning|Example|Value of Z|
+| **Operator** | **Meaning** | **Example** | **Value of Z** |
 |---|---|---|---|
 | + | Addition | int z = 17 + 4 | 21 |
 | - | Subtraction | int z = 17 - 4 | 13 |
@@ -130,7 +130,7 @@ public class IncOperator{
 ```
 --- 
 ## Assignment Operators
-| Operator  | Equivalant |
+| **Operator**  | **Equivalant** |
 |---|---|
 | total += 5; | total = total + 5; |
 | total -= 5; | total = total - 5; |
@@ -146,18 +146,143 @@ another.
     <details>
         <summary>Assignment conversion</summary>
 
-        int(32 bits) -> double(64 bits)
+        // int(32 bits) -> double(64 bits)
         int value1 = 32;
         double value2 = value1;
-        System.out.println(value1);
-        System.out.println(value2);
+        System.out.println(value1);     //32
+        System.out.println(value2);     //32.0
     </details>
     <details>
         <summary>Casting</summary>
-        
-        int(32 bits) -> double(64 bits)
-        int value1 = 32;
-        double value2 = value1;
-        System.out.println(value1);
-        System.out.println(value2);
+
+        // double(64 bits) -> int(32 bits)
+        double value1 = 32.5;
+        int value2 = (int)value1;
+        System.out.println(value1);     //32.5
+        System.out.println(value2);     //32
     </details>
+    <details>
+        <summary>String to numeric type</summary>
+
+        // Convert to int
+        String s1 = "32";
+        int value1 = Integer.parseInt(s1);
+        // Convert to double
+        String s2 = "32.5";
+        double value2 = double.parseDouble(s2);
+    </details>
+---
+## Get User input
+```
+// import Scanner class 
+import java.util.Scanner;
+
+public class Main(){
+    private static Scanner myScanner = new Scanner(System.in); 
+
+    public static void main(String[] args){
+        System.out.println("Enter some text: ");
+        String text = myScanner.nextLine();
+        System.out.println(text);
+
+        System.out.println("Enter a number: ");
+        int intNum = myScanner.nextInt();
+        System.out.println(intNum);
+
+        System.out.println("Enter a double: ");
+        int doubleNum = myScanner.nextDouble();
+        System.out.println(doubleNum);
+    }
+}
+```
+---
+## Condition Operator
+| **Operator** | **Meaning** |
+|---|---|
+| == | Equal to |
+| != | Not equal to |
+| < | Less than |
+| <= | Less than or equal to |
+| > | Greater than |
+| >= | Greater than or equal to |
+---
+## Decesion
+### If
+    // If a condition is true, we enter the if block statement. 
+    // Else we skip the if block statement.
+    public class IfExample{
+        public static void main(String[] args){
+            int n = 6;  
+            if(n > 5){
+                System.out.println("n is more than 5")
+            }
+        }
+    }
+
+### If-Else
+    // If a condition is true, we enter the if block statement. 
+    // Else we skip the if block statement.
+    public class IfElseExample{
+        public static void main(String[] args){
+            int n = 3;  
+            if(n > 5){
+                System.out.println("n is more than 5")
+            }else{
+                System.out.println("n is not more than 5")
+            }
+        }
+    }
+
+### If-Else If-Else
+    // If a condition is true, we enter the if block statement. 
+    // Else we skip the if block statement.
+    public class IfElseExample{
+        public static void main(String[] args){
+            int n = 0;  
+            if(n > 5){
+                System.out.println("n is more than 5")
+            }else if(n > 3){
+                System.out.println("n is more than 3")
+            }else{
+                System.out.println("n is not more than 3")
+            }
+        }
+    }
+### Switch
+    // break keyword for each case is necessary to isolate each case
+    public class SwitchExample{
+        public static void main(String[] args){
+            int caseNum = 1;
+            switch(caseNum){
+                case 1: 
+                    System.out.println("1");
+                    break;
+                case 2:
+                    System.out.println("2");
+                    break;
+                case 3:
+                    System.out.println("3");
+                    break;
+                default:
+                    // default is use to handle non-defined cases
+                    System.out.println("none of Above");
+            }
+        }
+    }
+---
+## Compound Situation
+***AND  &&***
+| **Condition A** | **Condition B** | **Result** |
+|---|---|---| 
+|X|X|X|
+|X|/|X|
+|/|X|X|
+|/|/|/|
+
+***OR ||***
+| **Condition A** | **Condition B** | **Result** |
+|---|---|---| 
+|X|X|X|
+|X|/|/|
+|/|X|/|
+|/|/|/|
