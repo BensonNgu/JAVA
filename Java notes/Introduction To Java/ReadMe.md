@@ -286,3 +286,42 @@ public class Main(){
 |X|/|/|
 |/|X|/|
 |/|/|/|
+
+---
+## Repetition 
+<details>
+    <summary>For Loop</summary>
+
+    /* Syntax:
+    for(initialisation ; terminating condition ; increment/decrement){
+        // code goes into here
+        statement(s)
+    }
+    */
+
+    //Example
+    public class ForExample{
+        public static void main(String[] args){
+            for(int i = 1;i <= 5;i++){
+                System.out.println("run " + i);
+            }
+        }
+    }
+</details>
+<details>
+    <summary>Advanced For Loop</summary>
+
+
+</details>
+<details>
+    <summary>While Loop</summary>
+
+    /*Syntax:
+    while(condition){
+        statement(s)
+    }
+    */
+
+    //Example
+    
+</details>
