@@ -309,11 +309,6 @@ public class Main(){
     }
 </details>
 <details>
-    <summary>Advanced For Loop</summary>
-
-
-</details>
-<details>
     <summary>While Loop</summary>
 
     /*Syntax:
@@ -323,5 +318,98 @@ public class Main(){
     */
 
     //Example
-    
+    public class WhileExample{
+        public static void main(String[] args){
+            int i = 0;
+            while(i<=5){
+                System.out.println("run" + i);
+                i++;
+            }
+        }
+    }
 </details>
+
+---
+
+## Array
+- fixed-length sequence of values of same type
+    - The type can be primitive
+- Size/length of the array 
+    - determines the maximum number of items it contains
+- Element 
+    - items inside the array
+    - occupy consecutive memory space
+    - accessed by its unique position number (index)
+
+### Declaring / Creating Array
+- Syntax for:
+    - Declaring:
+        - data_type[] array_Name;
+    - Creating:
+        - array_Name = new data_type[array_size];
+    - Declaring and Creating:
+        - data_type[] array_Name = new data_type[array_size];
+
+### Initializing using index
+```
+public class ArrayExample{
+    public static void main(String[] args){
+        //Declaring array
+        int[] marks;
+
+        //Creating array
+        marks = new int[5];
+
+        marks[0] = 1;
+        marks[1] = 2;
+        marks[2] = 3;
+        marks[3] = 4;
+        marks[4] = 5;
+    }
+}
+```
+
+### Declaring + Creating + Initializing at the same time
+```
+public class ArrayExample{
+    public static void main(String[] args){
+        //Declaring array
+        int[] marks = {1,2,3,4,5};
+    }
+}
+```
+
+### Accessing Element Using index
+```
+public class ArrayExample{
+    public static void main(String[] args){
+        //Declaring array
+        int[] marks = {1,2,3,4,5};
+
+        System.out.println(marks[0]);
+        System.out.println(marks[1]);
+        System.out.println(marks[2]);
+        System.out.println(marks[3]);
+        System.out.println(marks[4]);
+    }
+}
+```
+### Accessing Element Using Loop
+```
+public class ArrayExample{
+    public static void main(String[] args){
+        //Declaring array
+        int[] marks = {1,2,3,4,5};
+
+        // normal for loop
+        for(int i = 0; i < marks.length;i++){
+            System.out.println(marks[i]);
+        }
+
+        //advanced for
+        for(int obj : marks){
+            System.out.println(obj);
+        }
+    }
+}
+```
