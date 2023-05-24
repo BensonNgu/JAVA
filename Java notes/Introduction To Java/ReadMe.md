@@ -1,7 +1,7 @@
 # Introduction to Java
 
 ## How Java Program look like?
-```
+```java
 public class Main{
     
     public static void main(String[] args){
@@ -28,7 +28,7 @@ public class Main{
 
 - A main method is the  starting point from where compiler starts program execution.
 - Not every java file should have a main method
-```
+```java
     public static void main(String[] args){
         System.out.println("Hello World");
     }
@@ -54,14 +54,14 @@ public class Main{
 - An example of non-primitive data type
 - it contain a collection of characters surrounded by double 
 quotes
-```
+```java
 String name = "Benson";
 ```
 ---
 ## Variable Declaration
 - Syntax:
     - type variableName = value;
-```
+```java
     String name = "Benson";
     int age = 21;
     double weight = 67.5;
@@ -76,14 +76,14 @@ String name = "Benson";
     - Only Uppercase letters
     - seperate each word with an underscore "_"
     - usually declared as a static class variable
-```
+```java
 final static double CONVERT_RATE = 2.4;
 ``` 
 ---
 ## Enumerations
 - defines a set of constants that are represented as unique identifiers
 
-```
+```java
 public class EnumExample{
     enum Status{CONTINUE,WIN.LOST};
 
@@ -115,7 +115,7 @@ public class EnumExample{
     
 * both are same with count = count + 1;
 * But can yeild different result depending on the form of used 
-```
+```java
 public class IncOperator{
     public static void main(String[] main){
         int count = 5;
@@ -146,34 +146,40 @@ another.
     <details>
         <summary>Assignment conversion</summary>
 
-        // int(32 bits) -> double(64 bits)
-        int value1 = 32;
-        double value2 = value1;
-        System.out.println(value1);     //32
-        System.out.println(value2);     //32.0
+    ```java
+    // int(32 bits) -> double(64 bits)
+    int value1 = 32;
+    double value2 = value1;
+    System.out.println(value1);     //32
+    System.out.println(value2);     //32.0
+    ```
     </details>
     <details>
         <summary>Casting</summary>
 
-        // double(64 bits) -> int(32 bits)
-        double value1 = 32.5;
-        int value2 = (int)value1;
-        System.out.println(value1);     //32.5
-        System.out.println(value2);     //32
+    ```java
+    // double(64 bits) -> int(32 bits)
+    double value1 = 32.5;
+    int value2 = (int)value1;
+    System.out.println(value1);     //32.5
+    System.out.println(value2);     //32
+    ```
     </details>
     <details>
         <summary>String to numeric type</summary>
 
-        // Convert to int
-        String s1 = "32";
-        int value1 = Integer.parseInt(s1);
-        // Convert to double
-        String s2 = "32.5";
-        double value2 = double.parseDouble(s2);
+    ```java
+    // Convert to int
+    String s1 = "32";
+    int value1 = Integer.parseInt(s1);
+    // Convert to double
+    String s2 = "32.5";
+    double value2 = double.parseDouble(s2);
+    ```
     </details>
 ---
 ## Get User input
-```
+```java
 // import Scanner class 
 import java.util.Scanner;
 
@@ -208,67 +214,75 @@ public class Main(){
 ---
 ## Decesion
 ### If
-    // If a condition is true, we enter the if block statement. 
-    // Else we skip the if block statement.
-    public class IfExample{
-        public static void main(String[] args){
-            int n = 6;  
-            if(n > 5){
-                System.out.println("n is more than 5")
-            }
+```java
+// If a condition is true, we enter the if block statement. 
+// Else we skip the if block statement.
+public class IfExample{
+    public static void main(String[] args){
+        int n = 6;  
+        if(n > 5){
+            System.out.println("n is more than 5")
         }
     }
+}
+```
 
 ### If-Else
-    // If a condition is true, we enter the if block statement. 
-    // Else we skip the if block statement.
-    public class IfElseExample{
-        public static void main(String[] args){
-            int n = 3;  
-            if(n > 5){
-                System.out.println("n is more than 5")
-            }else{
-                System.out.println("n is not more than 5")
-            }
+```java
+// If a condition is true, we enter the if block statement. 
+// Else we skip the if block statement.
+public class IfElseExample{
+    public static void main(String[] args){
+        int n = 3;  
+        if(n > 5){
+            System.out.println("n is more than 5")
+        }else{
+            System.out.println("n is not more than 5")
         }
     }
+}
+```
 
 ### If-Else If-Else
-    // If a condition is true, we enter the if block statement. 
-    // Else we skip the if block statement.
-    public class IfElseExample{
-        public static void main(String[] args){
-            int n = 0;  
-            if(n > 5){
-                System.out.println("n is more than 5")
-            }else if(n > 3){
-                System.out.println("n is more than 3")
-            }else{
-                System.out.println("n is not more than 3")
-            }
+```java
+// If a condition is true, we enter the if block statement. 
+// Else we skip the if block statement.
+public class IfElseExample{
+    public static void main(String[] args){
+        int n = 0;  
+        if(n > 5){
+            System.out.println("n is more than 5")
+        }else if(n > 3){
+            System.out.println("n is more than 3")
+        }else{
+            System.out.println("n is not more than 3")
         }
     }
+}
+```
 ### Switch
-    // break keyword for each case is necessary to isolate each case
-    public class SwitchExample{
-        public static void main(String[] args){
-            int caseNum = 1;
-            switch(caseNum){
-                case 1: 
-                    System.out.println("1");
-                    break;
-                case 2:
-                    System.out.println("2");
-                    break;
-                case 3:
-                    System.out.println("3");
-                    break;
-                default:
-                    // default is use to handle non-defined cases
-                    System.out.println("none of Above");
-            }
+```java
+// break keyword for each case is necessary to isolate each case
+public class SwitchExample{
+    public static void main(String[] args){
+        int caseNum = 1;
+        switch(caseNum){
+            case 1: 
+                System.out.println("1");
+                break;
+            case 2:
+                System.out.println("2");
+                break;
+            case 3:
+                System.out.println("3");
+                break;
+            default:
+                // default is use to handle non-defined cases
+                System.out.println("none of Above");
         }
     }
+}
+```
 ---
 ## Compound Situation
 ***AND  &&***
@@ -292,41 +306,43 @@ public class Main(){
 <details>
     <summary>For Loop</summary>
 
-    /* Syntax:
-    for(initialisation ; terminating condition ; increment/decrement){
-        // code goes into here
-        statement(s)
-    }
-    */
-
-    //Example
-    public class ForExample{
-        public static void main(String[] args){
-            for(int i = 1;i <= 5;i++){
-                System.out.println("run " + i);
-            }
+```java
+/* Syntax:
+for(initialisation ; terminating condition ; increment/decrement){
+    // code goes into here
+    statement(s)
+}
+*/
+//Example
+public class ForExample{
+    public static void main(String[] args){
+        for(int i = 1;i <= 5;i++){
+            System.out.println("run " + i);
         }
     }
+}
+```
 </details>
 <details>
     <summary>While Loop</summary>
 
-    /*Syntax:
-    while(condition){
-        statement(s)
-    }
-    */
-
-    //Example
-    public class WhileExample{
-        public static void main(String[] args){
-            int i = 0;
-            while(i<=5){
-                System.out.println("run" + i);
-                i++;
-            }
+```java
+/*Syntax:
+while(condition){
+    statement(s)
+}
+*/
+//Example
+public class WhileExample{
+    public static void main(String[] args){
+        int i = 0;
+        while(i<=5){
+            System.out.println("run" + i);
+            i++;
         }
     }
+}
+```
 </details>
 
 ---
@@ -351,7 +367,7 @@ public class Main(){
         - data_type[] array_Name = new data_type[array_size];
 
 ### Initializing using index
-```
+```java
 public class ArrayExample{
     public static void main(String[] args){
         //Declaring array
@@ -370,7 +386,7 @@ public class ArrayExample{
 ```
 
 ### Declaring + Creating + Initializing at the same time
-```
+```java
 public class ArrayExample{
     public static void main(String[] args){
         //Declaring array
@@ -380,7 +396,7 @@ public class ArrayExample{
 ```
 
 ### Accessing Element Using index
-```
+```java
 public class ArrayExample{
     public static void main(String[] args){
         //Declaring array
@@ -395,7 +411,7 @@ public class ArrayExample{
 }
 ```
 ### Accessing Element Using Loop
-```
+```java
 public class ArrayExample{
     public static void main(String[] args){
         //Declaring array
