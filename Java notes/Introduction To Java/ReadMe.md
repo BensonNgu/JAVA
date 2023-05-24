@@ -1,5 +1,22 @@
 # Introduction to Java
-
+|Table of Content|
+|---|
+|[How Java Program look like?](#how-java-program-look-like)|
+|[Primitive Data Types](#primitive-data-types)|
+|[String](#string)|
+|[Variable Declaration](#variable-declaration)|
+|[Constant Variable Declaration](#constant-variable-declaration)|
+|[Enumerations](#enumerations)|
+|[Arithmetic operation](#arithmetic-operation)|
+|[Increment / Decrement Operators](#increment--decrement-operators)<br /> - [Prefix / Postfix](#prefix--postfix)|
+|[Assignment Operators](#assignment-operators)|
+|[Data Conversion](#data-conversion)|
+|[Get User input](#get-user-input)|
+|[Condition Operator](#condition-operator)|
+|[Decesion](#decesion)<br />- [If](#if)<br />- [If-Else](#if-else)<br />- [If-Else If-Else](#if-else-if-else)<br />- [Switch](#switch)|
+|[Compound Situation](#compound-situation)|
+|[Repetition ](#repetition)|
+|[Array](#array)<br />- [Declaring / Creating Array](#declaring--creating-array)<br />- [Initializing using index](#initializing-using-index)<br />- [Declaring + Creating + Initializing at the same time](#declaring--creating--initializing-at-the-same-time)<br />- [Accessing Element Using index](#accessing-element-using-index)<br />- [Accessing Element Using Loop](#accessing-element-using-loop)|
 ## How Java Program look like?
 ```java
 public class Main{
@@ -34,6 +51,7 @@ public class Main{
     }
 ```
 </details>
+
 ---
 ## Primitive Data Types
 - use to represent "simple" values  
