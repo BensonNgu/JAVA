@@ -1,6 +1,7 @@
 # JAVA NOTES AND SMALL PROJECT MADE BY BENSON NGU
 ## NOTES
 |Table of Content|
+|---|
 ｜[Introduction to Java](https://github.com/BensonNgu/java/tree/main/Java%20notes/Introduction%20To%20Java)｜
 ｜[OOP Intro](https://github.com/BensonNgu/java/tree/main/Java%20notes/OOP%20Intro)｜
 ｜[Interface](https://github.com/BensonNgu/java/tree/main/Java%20notes/Interface)｜
