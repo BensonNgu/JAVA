@@ -21,12 +21,13 @@
 | - staffId:int<br />- name:String<br />- salary:double<br />- jobTitle:String |
 |+ updateProfile(String:name,salary:double,jobTitle:String):void<br />+ getPaid():double<br />+ applyLeaves():void<br />|
 
---
+---
+
 ## Encapsulation
 - Putting all related attributes and methods that operate on the attributes, into a single unit(i.e. class)
 - Benefits:
     <details>
-        <summary>Hiding date</summary>
+        <summary>Hiding data</summary>
 
         - User will have no idea how class are being implemented or stored
         - Only know that values are being passed and initiated
@@ -97,3 +98,16 @@ public class Student
 - unique name to identify the class within a package
 - Naming convention
     - Uppercase the first letter of each word
+
+3 Attribute declarations
+```
+    // Attribute declaration
+    private String name;
+    private int mark;
+```
+- name and marks are called instance variables as memory
+- Each student object has its own name and marks
+- Each instatnce variable has access modifier
+    - public -> can be refferenced outside of the object
+    - private -> can only be refferenced anywhere within the class 
+- Normally, instance variables are "private" to ensure data [encapsulation](#encapsulation)
