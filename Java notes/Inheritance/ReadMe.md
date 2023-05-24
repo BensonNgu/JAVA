@@ -20,6 +20,4 @@
 - Inheritance establish "is-a(type of)" relationship to them
 - CD is a type of LoanItem
 
-```mermaid
-
-```
+![Class Diagram](img/Screenshot_20230524_100912.png)
