@@ -48,3 +48,52 @@
 
 ---
 ## Class
+- Blueprint of an object
+- establish 'the kind of data an object of the type will hold'
+- defines the methods that represent the behaviour of such objects
+
+### Class Declaration
+- Every class can contain attribute declaration and method declaration
+- Each new class created becomes a new data type in java that can be used to declare variables and create objects
+
+```
+// 
+public class Student{
+    // Attribute declaration
+    private String name;
+    private int mark;
+
+    public Student(String studName,int studMark){
+        name = studName;
+        mark = studMark;
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public void setName(String studName){
+        name = studName;
+    }
+    
+    public int getMark(){
+        return mark;
+    }
+
+    public void setMark(int studMark){
+        mark = studMark;
+    }
+}
+```
+#### Explaination
+
+```
+public class Student
+```
+1 Access modifier
+- can be public or private
+
+2 Class Name
+- unique name to identify the class within a package
+- Naming convention
+    - Uppercase the first letter of each word
