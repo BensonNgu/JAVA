@@ -19,3 +19,7 @@
 ## Relationship between superclass and subclass
 - Inheritance establish "is-a(type of)" relationship to them
 - CD is a type of LoanItem
+
+```mermaid
+
+```
