@@ -12,18 +12,8 @@
 [learn more about inheritance](https://github.com/BensonNgu/java/tree/main/Java%20notes/Inheritance)
 ```mermaid\
 classDiagram
-class Staff{
-
-}
 Staff<|-- FullTimeStaff
 Staff<|-- PartTimeStaff
-
-class FullTimeStaff{
-
-}
-class PartTimeStaff{
-    
-}
 ```
 
 
