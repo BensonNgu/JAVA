@@ -201,6 +201,89 @@ public class CD extends LoanItem{
 
 ---
 
+## Method Signature
+- Method in JAVA comprises of :
+	- Access modifier
+	- Return type
+	- Method name
+	- Parameter list
+	- Method body
+- While Method signature comprises of:
+	- Method name
+	- Parameter list
+### Method overload
+- method with the same name but different signature
+- JAVA match the name and the parameter list automatically to determine which method to call
+```java
+import java.lang.Math;
 
+public class SignatureDemo{
+	private double weight;
+	private double height;
 
+	public void setWeight(double weight){	//kg
+		this.weight = weight;
+	}
+		public void setWeight(int weight){	//g
+		this.weight = (double) weight/1000;
+	}
 
+	public void setHeight(double height){	//m
+		this.height = height;
+	}
+		public void setHeight(int height){	//cm
+		this.height = (double) height/100;
+	}
+	
+	public double calcBMI(){
+		double bmi =  weight / Math.pow(height,2.0)
+		return roundOffToTwoDecimalPlaces(bmi);
+	}
+	public double roundOffToTwoDecimalPlaces(double num){
+		return (double) Math.round(num*100)/100;
+	}
+	
+	public static void main(String[] args){
+		SignatureDemo person1 = new SignatureDemo();
+		person1.setweight(77.5);		// take in double 
+		person1.setHeight(1.75);		// take in double 
+		double p1_bmi = person1.calcBMI();
+		System.out.println("Person 1's BMI is " + p1_bmi);
+		SignatureDemo person2 = new SignatureDemo();
+		person2.setweight(67500);		// take in integer 
+		person2.setHeight(165);			// take in double 
+		double p1_bmi = person1.calcBMI();
+		System.out.println("Person 2's BMI is " + p1_bmi);
+	} 
+}
+```
+Output :
+```
+Person 1's BMI is 25.31
+Person 2's BMI is 24.79
+```
+---
+##  Method override
+- Apply in subclass when superclass method is "not suitable"
+- Same method signature but different method body
+```mermaid
+classDiagram 
+Shape<|--Rectangle 
+Shape<|--Triangle 
+Shape<|--Circle 
+Shape:+draw() 
+class Rectangle{ 
+	+draw() 
+} 
+class Triangle{ 
+	+draw() 
+}
+```
+```java
+//superclass
+public class Shape{
+	public void draw(){
+		System.out.println("This is a shape");
+	}
+}
+```
