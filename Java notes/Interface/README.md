@@ -1,7 +1,7 @@
 # WHAT IS AN INTERFACE IN JAVA ?
 - A template that can be apply to a class
 - Similar to inheritance but not all
-- Interface = [inheritance](linkToPaste) + [abstract](linkToPaste)
+- Interface = [inheritance](https://github.com/BensonNgu/java/tree/main/Java%20notes/Inheritance) + [abstract](https://github.com/BensonNgu/java/tree/main/Java%20notes/Abstract)
 
 # DIFFERENCES BETWEEN INTERFACE AND INHERITANCE
 | **Interface**   | **Inheritance**   |
