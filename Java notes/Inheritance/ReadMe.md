@@ -1,4 +1,15 @@
 ## Inheritance
+|Table of content|
+|---|
+|[Superclass](#superclass)|
+|[Subclass](#subclass)|
+|[Relationship between superclass and subclass](#relationship-between-superclass-and-subclass)|
+|[How to inherit from a superclass in JAVA?](#how-to-inherit-from-a-superclass-in-java)|
+|[Super Reference](#super-reference)|
+|[Constructor in subclasses](#constructor-in-subclasses)|
+|[Private vs Protected](#private-vs-protected)|
+|[Method Signature](#method-signature)<br />- [Method overload](#method-overload)|
+|[Method override](#method-override)|
 - Object of diffrent classes may share the common properties and behaviours
 - Example : Library System
 - Types of items for loans:
@@ -37,6 +48,9 @@ LoanItem:-String title
 LoanItem:+borrow()
 LoanItem:+return()
 ```
+
+[Back To Top](#inheritance)
+
 ---
 ## How to inherit from a superclass in JAVA?
 - Using **extends** keyword
@@ -64,7 +78,10 @@ public class CD extends LoanItem{
 	//other special attributes and method of CD
 	...
 }
-```
+```  
+
+[Back To Top](#inheritance)
+
 ---
 ## Super Reference
 - reserved keyword
@@ -83,7 +100,10 @@ public class CD extends LoanItem{
 ```
 - When do we use **super** keyword?
 	- access super class constructor
-	- access an overridden method in super class from subclass (later) 
+	- access an overridden method in super class from subclass (later)   
+
+[Back To Top](#inheritance)
+
 ---
 ## Constructor in subclasses
 - Subclass does to inherit constructor from super constructor
@@ -147,6 +167,8 @@ In SubContructor
 ```
 </details>
 
+[Back To Top](#inheritance)
+
 ---
 ## Private vs Protected 
 <table>
@@ -208,6 +230,8 @@ public class CD extends LoanItem{
 </td>
 </tr>
 </table>
+
+[Back To Top](#inheritance)
 
 ---
 
@@ -272,6 +296,8 @@ Output :
 Person 1's BMI is 25.31
 Person 2's BMI is 24.79
 ```
+[Back To Top](#inheritance)
+
 ---
 ##  Method override
 - Apply in subclass when superclass method is "not suitable"
@@ -348,3 +374,4 @@ This is a triangle
 
 This is a shape
 ```
+[Back To Top](#inheritance)
