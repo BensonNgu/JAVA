@@ -229,7 +229,7 @@ Output :
 - s1, s2 and s3 are of the type “HRPay”
 - It does not care which “datatype” is attached to s1,s2 or s3
 - All it cares is that it has the method calculatePay().
-- This is also known as “[Late-binding]()”
+- This is also known as “[Late-binding](https://github.com/BensonNgu/java/blob/main/Java%20notes/Polymorphism/late-binding.md)”
 - The actual “datatype” is only “binded” 
 - into the variable during “run time”
 
