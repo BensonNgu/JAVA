@@ -297,3 +297,54 @@ public class Shape{
 	}
 }
 ```
+```java 
+//subclass
+public class Rectangle{
+	@Override
+	public void draw(){
+		System.out.println("This is a rectangle");
+	}
+}
+```
+```java 
+//subclass
+public class Triangle{
+	@Override
+	public void draw(){
+		super.draw();
+		System.out.println("This is a triangle");
+	}
+}
+```
+```java 
+//subclass
+public class Circle{
+	//inherit draw() from Shape
+}
+```
+```java
+public class ShapeTest{
+	public static void main(String[] args){
+		Shape shape = new Shape();
+		Rectangle rectangle = new Rectangle();
+		Triangle triangle = new Triangle; 
+		Circle circle = new Circle();
+		
+		shape.draw();System.out,println();
+		rectangle.draw();System.out,println();
+		triangle.draw();System.out,println();
+		circle.draw();System.out,println();
+	}
+}
+```
+Output :
+```
+This is a shape
+
+This is a rectangle
+
+This is a shape
+This is a triangle
+
+This is a shape
+```
