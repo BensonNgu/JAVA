@@ -11,6 +11,20 @@
 
 ###  Example
 ```mermaid
+classDiagram
+class Vehicle{
+		<<Abstract>>
+		go()*
+}
+Vehicle<|-- Car : Inheritance
+Vehicle<|-- Bike: Inheritance
+class Car{
+	+go()
+}
+class Bike{
+	+go()
+}
+
 ```
 ```java
 //superclass
@@ -28,6 +42,7 @@ public class Car extends Vehicle{
 }
 ```
 ```java
+//subclass
 public class Bike extends Vehicle{
 	@Override
 	void go(){
