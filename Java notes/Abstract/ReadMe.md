@@ -1,4 +1,4 @@
-## Abstract
+# Abstract
 
 ### Abstract Class
 - An abstract class cannot be instantiated

@@ -1,4 +1,4 @@
-## Inheritance
+# Inheritance
 |Table of content|
 |---|
 |[Superclass](#superclass)|
