@@ -98,12 +98,12 @@ public class CD extends LoanItem{
 - Subclass must call the super class constructor
 - The calling may be 
 <details>
-<summary>**implicit** when <ins>there is a</ins> default constructor</summary
+<summary>**implicit** when <ins>there is a</ins> default constructor</summary>
 		
 ```java
 public class SuperConstructor{
-	public SuperConstructor(String msg){	//this is not a default constructor as it takes in parameter(s)
-		System.out.println(msg);
+	public SuperConstructor(){	//this is a default constructor as it does not take in any parameter
+		System.out.println("In SuperContructor");
 	}
 }
 ```
