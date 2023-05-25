@@ -10,7 +10,7 @@
 
 ## Polymorphism by Inheritance
 [learn more about inheritance](https://github.com/BensonNgu/java/tree/main/Java%20notes/Inheritance)
-```mermaid\
+```mermaid
 classDiagram
 Staff<|-- FullTimeStaff
 Staff<|-- PartTimeStaff
