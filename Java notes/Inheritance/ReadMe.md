@@ -26,7 +26,17 @@
 - Books is a type of LoanItem
 - Magazine is a type of LoanItem
 
-![Class Diagram](img/Screenshot_20230524_100912.png)
+```mermaid
+classDiagram
+LoanItem<|-- CD
+LoanItem<|-- Book
+LoanItem<|-- Magazine 
+
+LoanItem:-String itemID
+LoanItem:-String title
+LoanItem:+borrow()
+LoanItem:+return()
+```
 ---
 ## How to inherit from a superclass in JAVA?
 - Using **extends** keyword
