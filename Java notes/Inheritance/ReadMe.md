@@ -234,14 +234,14 @@ public class SignatureDemo{
 	public void setWeight(double weight){	//kg
 		this.weight = weight;
 	}
-		public void setWeight(int weight){	//g
+	public void setWeight(int weight){	//g
 		this.weight = (double) weight/1000;
 	}
 
 	public void setHeight(double height){	//m
 		this.height = height;
 	}
-		public void setHeight(int height){	//cm
+	public void setHeight(int height){	//cm
 		this.height = (double) height/100;
 	}
 	
