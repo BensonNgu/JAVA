@@ -102,8 +102,8 @@ public class CD extends LoanItem{
 		
 ```java
 public class SuperConstructor{
-	public SuperConstructor(){	//this is a default constructor as it does not take in any parameter
-		System.out.println("In SuperContructor");
+	public SuperConstructor(String msg){	//this is not a default constructor as it takes in parameter(s)
+		System.out.println(msg);
 	}
 }
 ```
