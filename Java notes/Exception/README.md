@@ -107,8 +107,46 @@ Exception in thread "main" java.io.FileNotFoundException: StudentMarks.dat (No s
 	at Main.main(Main.java:8)
 ```
 ---
+## Exception Propagation
+- If exception is not caught and handled where it occurs, control is immediately returned to the method that invocked the method that produced the exception
+- This process keep continuing until the exception is caught and handled or until t passed out of main method terminates the program and produce the exception message)
 
+### Explanation with diagram
+```mermaid
+flowchart TD
+
+main["main()"]
+m1["methodA()\n call methodB()"]
+m2["methodB()\n call methodC()"]
+m3["methodC()\n throws exception"]
+
+main-->m1
+m1-->m2
+m2-->m3
+m3=="If the exception cannot \nbe caught in methodC()"==>m2
+m2=="If the exception cannot \nbe caught in methodB()"==>m1
+m1=="If the exception cannot \nbe caught in methodA()"==>main
+```
+- It search the ordered list of the methods that had been called to get to the method where the error occured
+- Call stack -> the list of methods
+- runtime system searchs the call stack for a method that contains an exception handler for the given exception
+
+[more example of exception propagation with code implementation]() 
 
 [Back To Top](#exception)
 
 ---
+
+## Creating your own Exception
+
+[click to view the code]()
+
+---
+## Assertion
+- primarilt for debugging and identifying logic error in an application
+
+|Assertion|vs|Exception|
+|---|---|---|
+|to assure the corectness of the program||deals with unusual circumstances during program execution|
+|addresses correctness||addresses robustness|
+|used for internal consistency and validity checks||can be used for normal test|
