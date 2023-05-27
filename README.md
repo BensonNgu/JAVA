@@ -9,4 +9,4 @@
 |[Interface](https://github.com/BensonNgu/java/tree/main/Java%20notes/Interface)|
 |[Polymorphism](https://github.com/BensonNgu/java/tree/main/Java%20notes/Polymorphism)|
 |[Exception](https://github.com/BensonNgu/java/tree/main/Java%20notes/Exception)|
-|[FileReader (read and write)](https://github.com/BensonNgu/java/tree/main/Java%20notes/FileReader%20(read%20and%20write))|
+|[FileIO (read and write)](https://github.com/BensonNgu/java/tree/main/Java%20notes/File%20IO)|

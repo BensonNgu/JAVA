@@ -243,4 +243,4 @@ public class ReadFromCSVFile{
 - After serialized object has been written into a file, it can be read by deserialized to recreate the object in memory
 - Serializable is an interface, thus a class need to **implement** Serializable.
 
-[Get more Example]()
+[Get more Example](https://github.com/BensonNgu/java/tree/main/Java%20notes/File%20IO/src)
