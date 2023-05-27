@@ -138,7 +138,6 @@ m1=="If the exception cannot \nbe caught in methodA()"==>main
 ---
 
 ## Creating your own Exception
-
 [click to view the code]()
 
 ---
