@@ -172,9 +172,25 @@ import java.io.*;
 import java.util.*;
 
 public class WriteToCSVFile{
-    String inputFileName = "results.csv";
-    String outputFileName = "grades.csv";
-    Arraylist<Student>
+    private final String OUTPUT_FILENAME = "grades.csv";
+    private static Arraylist<Student>students;
+
+    public static void main(String[] args){
+        ReadFromCSVFile read = new ReadFromCSVFile();
+        students = read.getstudents();  // you can either load student objects from current csv file or create few student object and add them into the ArrayList
+        try{
+            PrintWritter pw = new PrintWritter(OUTPUT_FILENAME); 
+            for(Student studentObj : students){
+                pw.write(studentObj.toCSVString()+"\n");
+            }
+            pw.close();
+        }catch(FileNotFoundException ex){
+            System.out.println("Unable to find file for reading");
+        }
+
+    }
+
+
 }
 ```
 2. read
@@ -183,8 +199,8 @@ import java.io.*;
 import java.util.*;
 
 public class ReadFromCSVFile{
+    private static ArrayList<Student>students = new ArrayList<Result>();
     public static void main(String[] args){
-        ArrayList<Student>students = new ArrayList<Result>();
         String inputFileName = "result.csv";
         try{
             File file = new File(inputFileName);
@@ -214,6 +230,10 @@ public class ReadFromCSVFile{
         for(Student studentObj : students){
             studentObj.toString();
         }
+    }
+
+    public ArrayList<Student> getStudents(){
+        return students;
     }
 }
 ```
