@@ -239,3 +239,14 @@ public class ReadFromCSVFile{
 ```
 ---
 ## Object Serialization
+- read an entire object from / write an entire object to a file
+- After serialized object has been written into a file, it can be read by deserialized to recreate the object in memory
+- Serializable is an interface, thus a class need to **implement** Serializable.
+```java
+import java.io.Serializable;
+
+public class Foo implements Serializable{
+			 private int x;
+				private  
+}
+```
