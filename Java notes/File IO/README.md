@@ -58,7 +58,7 @@ public class ReadFromBinFile{
                 int byteRead = is.read();
                 counter++;
 
-                if(byteRead == -1){
+                if(byteRead == -1){         // when there is the end of the binary file, is.read() will return us -1
                     carryOn = false;
                 }else{
                     System.out.println(byteRead);
@@ -221,7 +221,7 @@ public class ReadFromCSVFile{
                 double score = Double.parseDouble(data[3].trim());
 
                 Student student = new Student(studentNumber,fName,lName,score);
-                students.add(studentt);
+                students.add(student);
             }
         }catch(FileNotFoundException e){
             System.out.println("Unable find file for reading");
