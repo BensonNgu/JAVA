@@ -37,7 +37,7 @@ level4.1-->level3
 ### Checked Exception
 - a user error or a problem that ***cannot be foreseen by a programmer***
 - file to be opened cannot be found
-- MUST BE handledin the codes
+- MUST BE handled in the codes
 ### Unchecked Exception
 - AKA Runtime exception
 -  An exception that occurs that could have been avoided by the programmer by doing more checks
