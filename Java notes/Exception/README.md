@@ -109,7 +109,7 @@ Exception in thread "main" java.io.FileNotFoundException: StudentMarks.dat (No s
 ---
 ## Exception Propagation
 - If exception is not caught and handled where it occurs, control is immediately returned to the method that invocked the method that produced the exception
-- This process keep continuing until the exception is caught and handled or until t passed out of main method terminates the program and produce the exception message)
+- This process keep continuing until the exception is caught and handled or until it passed out of main method (terminates the program and produce the exception message)
 
 ### Explanation with diagram
 ```mermaid
