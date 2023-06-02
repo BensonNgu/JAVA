@@ -142,7 +142,7 @@ m1=="If the exception cannot \nbe caught in methodA()"==>main
 
 ---
 ## Assertion
-- primarilt for debugging and identifying logic error in an application
+- primarily for debugging and identifying logic error in an application
 
 |Assertion|vs|Exception|
 |---|---|---|
