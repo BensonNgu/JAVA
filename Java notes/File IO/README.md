@@ -1,7 +1,7 @@
 # Introduction
 - Data stored in variable and arrays are temporary
     - lost when local variable goes out of scope or program terminated
-- Fro long-term retention of data, computers use files
+- For long-term retention of data, computers use files
 - Persistent data 
     - data maintained in files
     - exists beyond the duration of the program execution
