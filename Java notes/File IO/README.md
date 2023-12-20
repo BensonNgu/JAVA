@@ -90,7 +90,7 @@ public class WriteToTextFile{
         String outputFileName = "fruits.txt";
 
         try{
-            PrintWritter pw = new PrintWritter(outputFileName);
+            PrintWriter pw = new PrintWriter(outputFileName);
 
             pw.write("Apple\n");
             pw.write("Orange\n");
@@ -179,7 +179,7 @@ public class WriteToCSVFile{
         ReadFromCSVFile read = new ReadFromCSVFile();
         students = read.getstudents();  // you can either load student objects from current csv file or create few student object and add them into the ArrayList
         try{
-            PrintWritter pw = new PrintWritter(OUTPUT_FILENAME); 
+            PrintWriter pw = new PrintWriter(OUTPUT_FILENAME); 
             for(Student studentObj : students){
                 pw.write(studentObj.toCSVString()+"\n");
             }
